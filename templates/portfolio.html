@@ -1,0 +1,346 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Portfolio {% endblock title %}
+{% block content %}
+
+
+<body>
+
+    <!-- page -->
+    <div id="page" class="hfeed site">
+        
+        <!-- header -->
+        <header id="masthead" class="site-header" role="banner">
+ 				
+                <!-- site-navigation -->
+                <nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+                    
+                    <a class="menu-toggle"><span class="lines"></span></a>
+                    
+                    <!-- nav-menu -->
+                    <div class="nav-menu">
+                        <ul>
+                            <li><a href="{% url 'index-page' %}">Home</a>
+                            <li><a href="{% url 'portfolio-page' %}">Portfolio</a></li>
+                            <li><a href="{% url 'book-page' %}">Books</a></li>
+                            <li><a href="{% url 'gallery-page' %}">Gallery</a></li>
+                            <li><a href="{% url 'about-page' %}">About Me</a>
+                            <li><a href="{% url 'contact-page' %}">Contact</a></li>
+                        </ul>
+                    </div>
+                    <!-- nav-menu -->
+                    
+                    <a class="search-toggle toggle-link"></a>
+                                        
+                    <!-- search-container -->
+                    <div class="search-container">
+                        
+                        <div class="search-box">
+                            <form role="search" method="get" class="search-form" action="#">
+                                <label>Search for
+                                    <input type="search" id="search-field" placeholder="type and hit enter" name="s">
+                                </label>
+                                <input type="submit" class="search-submit" value="Search">
+                            </form>
+                        </div>
+                    
+                    </div>
+                    <!-- search-container -->
+                    
+                    <!-- social-container -->
+                    <div class="social-container">
+                        
+                        <ul class="social">
+                            <li><a class="facebook" href="#"></a></li>
+                            <li><a class="twitter" href="#"></a></li>
+                            <li><a class="vine" href="#"></a></li>
+                            <li><a class="dribbble" href="#"></a></li>
+                            <li><a class="instagram" href="https://www.instagram.com/maxmudovv_10?igsh=MXQ5d2ZyZTltdDZnOA%3D%3D&utm_source=qr"></a></li>
+                        </ul>
+                      
+                        
+                    </div>
+                    <!-- social-container -->
+                    
+                </nav>
+                <!-- site-navigation -->
+                           
+                <!-- site-title -->
+                <h1 class="site-title">
+                	<a href="index.html" rel="home">
+                    	<img src="{% static 'images/site/logo.png' %}" alt="logo">
+                        <!--EDITOR-->
+                    </a>
+                </h1>
+                <!-- site-title -->
+                
+                
+                <!--<h1 class="site-title">
+                	<a href="../index.html" rel="home">
+                        EDITOR
+                    </a>
+                </h1>
+                <p class="site-description">just another minimalist theme.</p>-->
+
+                
+        </header>
+        <!-- header -->
+        
+        
+        
+        
+        <!-- site-main -->
+        <div id="main" class="site-main">
+        
+        
+        
+        	            
+            <!-- primary -->
+        	<div id="primary" class="content-area">
+            	
+                <!-- site-content -->
+                <div id="content" class="site-content" role="main">
+                
+                
+                
+                
+                	
+                    
+                    <!-- InstanceBeginEditable name="FeaturedContent" -->
+                    
+                        
+					<!-- InstanceEndEditable -->
+                	
+                    
+                    
+                    <!-- layout-medium -->
+                	<div class="layout-medium">
+                    
+                    
+                    
+						<!-- InstanceBeginEditable name="LayoutMediumContent" -->
+					
+                        <!-- entry-header -->
+                        <header class="entry-header">
+                            
+                            <h1 class="entry-title">PORTFOLIO</h1>
+                            
+                            <!--FILTERS-->
+                            <ul id="filters" class="filters">
+                              <li class="current"><a href="#" data-filter="*">ALL</a></li>
+                              <li><a href="#" data-filter=".design">DESIGN</a></li>
+                              <li><a href="#" data-filter=".coding">CODING</a></li>
+                              <li><a href="#" data-filter=".logo">LOGO</a></li>
+                            </ul>
+                            <!--FILTERS-->
+                                
+                        </header>
+                        <!-- entry-header -->
+
+                        
+                            
+                        <!-- .media-grid-wrap -->
+                        <div class="media-grid-wrap">
+                        
+                            <!-- PORTFOLIO -->
+                            <div class="portfolio media-grid masonry" data-layout="masonry" data-item-width="360">
+                              
+                              <!-- portfolio-item -->  
+                              <div class="media-cell logo hentry">
+                                
+                                <div class="media-box">
+                                    <img src="{% static 'images/portfolio/01.jpg' %}" alt="portfolio-post">
+                                    <div class="mask"></div>
+                                    <a href="portfolio-single.html"></a>
+                                </div>
+                                
+                                <div class="media-cell-desc">
+                                    <h3>BOOKCARD</h3>
+                                    <p class="category">a vcard theme</p>
+                                </div>
+                                
+                              </div>
+                              <!-- portfolio-item --> 
+                              
+                              
+                              <!-- portfolio-item - lightbox soundcloud -->  
+                              <div class="media-cell design hentry">
+                              
+                                <div class="media-box audio">
+                                    <img src="{% static 'images/portfolio/02.jpg' %}" alt="portfolio-post">
+                                    <div class="mask"></div>
+                                    <!-- lightbox - soundcloud --> 
+                                    <a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/221650664&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true" title="Lets Get Lost" class="lightbox mfp-iframe"></a>
+                                   
+                                    <!-- lightbox - soundcloud -->
+                                </div>
+                                <div class="media-cell-desc">
+                                    <h3>Changes - Leon</h3>
+                                    <p class="category">lightbox soundcloud</p>
+                                </div>
+                                
+                              </div>
+                              <!-- portfolio-item - lightbox soundcloud -->
+                              
+                              
+                              <!-- portfolio-item - custom url -->  
+                              <div class="media-cell logo hentry">
+                                <div class="media-box url">
+                                    <img src="{% static 'images/portfolio/03.jpg' %}" alt="portfolio-post">
+                                    <div class="mask"></div>
+                                    <a href="http://themeforest.net/user/pixelwars" target="_blank"></a>
+                                </div>
+                                <div class="media-cell-desc">
+                                    <h3>Shinny Robot</h3>
+                                    <p class="category">an illustration work</p>
+                                </div>
+                              </div>
+                              <!-- portfolio-item - custom url -->
+                              
+                              
+                              <!-- portfolio-item - lightbox gallery -->
+                              <div class="media-cell logo hentry">
+                                
+                                <div class="media-box image">
+                                    <img src="{% static 'images/portfolio/04.jpg' %}" alt="portfolio-post">
+                                    <div class="mask"></div>
+                                    <!-- lightbox - gallery -->
+                                    <a href="{% static 'images/portfolio/lightbox-01.jpg' %}" class="lightbox" title="Octopus is dangerous!"></a>
+                                    <a href="{% static 'images/portfolio/lightbox-02.jpg' %}" class="lightbox" title=""></a>
+                                    <a href="{% static 'images/portfolio/lightbox-03.jpg' %}" class="lightbox" title="Dog have dreams"></a>
+                                    <a href="{% static 'https://vimeo.com/193674451' %}" title="The Artist" class="lightbox mfp-iframe"></a>
+                                    <!-- lightbox - gallery -->
+                                </div>
+                                
+                                <div class="media-cell-desc">
+                                    <h3>Wizard Adventure</h3>
+                                    <p class="category">lightbox gallery</p>
+                                </div>
+                                
+                              </div>
+                              <!-- portfolio-item - lightbox gallery -->
+                              
+                              
+                              <!-- portfolio-item -->  
+                              <div class="media-cell coding hentry">
+                              
+                                <div class="media-box">
+                                    <img src="{% static 'images/portfolio/05.jpg' %}" alt="portfolio-post">
+                                    <div class="mask"></div>
+                                    <a href="portfolio-single.html"></a>
+                                </div>
+                                
+                                <div class="media-cell-desc">
+                                    <h3>Read</h3>
+                                    <p class="category">you are on the cover page</p>
+                                </div>
+                                
+                              </div>
+                              <!-- portfolio-item --> 
+                              
+                              
+                              <!-- portfolio-item - lightbox video -->  
+                              <div class="media-cell coding hentry">
+                                
+                                <div class="media-box video">
+                                    <img src="{% static 'images/portfolio/06.jpg' %}" alt="portfolio-post">
+                                    <div class="mask"></div>
+                                    <!-- lightbox - video --> 
+                                    <a href="https://vimeo.com/70161069" title="Fancy Animations" class="lightbox mfp-iframe"></a>
+                                    <!-- lightbox - video -->
+                                </div>
+                                
+                                <div class="media-cell-desc">
+                                    <h3>Fancy Animations</h3>
+                                    <p class="category">lightbox video</p>
+                                </div>
+                                
+                              </div>
+                              <!-- portfolio-item - lightbox video -->
+                              
+                              
+                              <!-- portfolio-item - lightbox image -->  
+                              <div class="media-cell design hentry">
+                                
+                                <div class="media-box image">
+                                    <img src="{% static 'images/portfolio/07.jpg' %}" alt="portfolio-post">
+                                    <div class="mask"></div>
+                                    <!-- lightbox - image --> 
+                                    <a href="{% static 'images/portfolio/lightbox-01.jpg' %}" title="an artist doing some art" class="lightbox"></a>
+                                    <!-- lightbox - image -->
+                                </div>
+                                
+                                <div class="media-cell-desc">
+                                    <h3>World War X</h3>
+                                    <p class="category">ligthbox image</p>
+                                </div>
+                                
+                              </div>
+                              <!-- portfolio-item - lightbox image -->
+                              
+                              
+                               <!-- portfolio-item -->  
+                              <div class="media-cell logo hentry">
+                                <div class="media-box">
+                                    <img src="{% static 'images/portfolio/08.jpg' %}" alt="portfolio-post">
+                                    <div class="mask"></div>
+                                    <a href="portfolio-single.html"></a>
+                                </div>
+                                <div class="media-cell-desc">
+                                    <h3>Behind The Eyes</h3>
+                                    <p class="category">an illustration work</p>
+                                </div>
+                              </div>
+                              <!-- portfolio-item --> 
+                              
+                              <!-- portfolio-item -->  
+                              <div class="media-cell coding hentry">
+                                <div class="media-box">
+                                    <img src="{% static 'images/portfolio/09.jpg' %}" alt="portfolio-post">
+                                    <div class="mask"></div>
+                                    <a href="portfolio-single.html"></a>
+                                </div>
+                                <div class="media-cell-desc">
+                                    <h3>Photographer</h3>
+                                    <p class="category">an illustration work</p>
+                                </div>
+                              </div>
+                              <!-- portfolio-item --> 
+                              
+                              
+                            </div>
+                            <!-- PORTFOLIO -->
+                        
+                        
+                        </div>    
+						<!-- .media-grid-wrap -->
+                        
+                        
+                        
+                
+                		<!-- InstanceEndEditable -->
+                    	
+                        
+                    	
+                    </div>
+                    <!-- layout-medium -->
+                    
+                    
+                
+                
+                	
+                
+                </div>
+                <!-- site-content -->
+                
+            </div>
+            <!-- primary -->    
+        
+        
+        
+        
+        </div>
+        <!-- site-main -->
+        
+        
+                       {% endblock content %}
